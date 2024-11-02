@@ -1,0 +1,17 @@
+<h1>Edit Document - Add Text and Signature</h1>
+
+<%= form_with model: @document, url: document_path(@document), method: :put, local: true do |f| %>
+    <%= f.label :text, "Text to Add" %>
+    <%= f.text_field :text %><br>
+
+    <%= f.label :signature, "Signature Image" %>
+    <%= f.file_field :signature %><br>
+
+    <%= f.submit "Annotate PDF" %>
+a
+    <canvas id="signature-pad" width="400" height="200" style="border: 1px solid #000;"></canvas>
+    <button id="clear-signature">Clear</button>
+    <button id="save-signature">Save</button>
+    <input type="hidden" id="signature-input" name="signature">
+
+<% end %>

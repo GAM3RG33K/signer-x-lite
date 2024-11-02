@@ -1,0 +1,12 @@
+
+<h1>Uploaded Documents</h1>
+
+<%= link_to 'Upload New Document', new_document_path %>
+
+<ul>
+  <% @documents.each do |document| %>
+    <li>
+      <%= link_to document.pdf.identifier, document_path(document) %>
+    </li>
+  <% end %>
+</ul>
