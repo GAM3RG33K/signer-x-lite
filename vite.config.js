@@ -6,11 +6,10 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate',
-      workbox: {
-        swSrc: 'public/sw.js', // Use the service worker we created
+      strategies: 'injectManifest', // Use the 'injectManifest' strategy for custom service worker
+      injectManifest: {
+        swSrc: 'public/sw.js', // Path to your custom service worker file
       },
-      injectRegister: 'auto', // Automatically registers the service worker
       manifest: {
         name: 'PDF PWA Signer',
         short_name: 'PDFSigner',
