@@ -1,0 +1,35 @@
+.signature-canvas {
+  border: 2px solid #000; /* Add border to the canvas */
+  border-radius: 5px; /* Optional rounded corners */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+}
+
+.signature-pad-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.signature-pad-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
