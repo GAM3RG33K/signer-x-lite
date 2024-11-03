@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import { PDFDocument } from "pdf-lib";
 import { Document, Page, pdfjs } from "react-pdf";
 import { Rnd } from "react-rnd";
-import { PDF_WORKER_PATH } from "../App"; // Import PDF_WORKER_PATH
 
 const PDFEditor = ({ pdfFile, signature, onComplete }) => {
   const [numPages, setNumPages] = useState(null);

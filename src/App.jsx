@@ -1,7 +1,7 @@
-import React from 'react';
-import Home from './pages/Home';
+import React from "react";
+import Home from "./pages/Home";
 
-export const PDF_WORKER_PATH = `/pdf-worker/pdf.worker.mjs`;
+export const PDF_WORKER_PATH = `/pdf.worker.mjs`;
 
 function App() {
   return (
